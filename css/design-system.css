@@ -18,6 +18,14 @@
     background-color: var(--Soft-Blue);
 }
 
+.text-soft-blue{
+    color: var(--Soft-Blue);
+}
+
 .dark-blue{
     background-color: var(--Very-Dark-Blue);
+}
+
+.text-dark-blue{
+    color: var(--Very-Dark-Blue);
 }
