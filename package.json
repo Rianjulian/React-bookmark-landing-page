@@ -1,0 +1,25 @@
+{
+  "name": "bookmark-landing-page-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch",
+    "autoprefixer": "postcss style.css -u autoprefixer --no-map -o style.css",
+    "minify": "postcss style.css -u cssnano --no-map -o style.min.css",
+    "build": "npm run tailwind && npm run autoprefixer",
+    "production": "npm run tailwind && npm run autoprefixer && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rianjulian/Tailwind-bookmark-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rianjulian/Tailwind-bookmark-landing-page/issues"
+  },
+  "homepage": "https://github.com/Rianjulian/Tailwind-bookmark-landing-page#readme"
+}
