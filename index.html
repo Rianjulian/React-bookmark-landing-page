@@ -18,10 +18,10 @@
 
 <body>
 
-  <nav class="py-5 grid xl:grid-flow-col xl:px-36 justify-between items-center">
+  <nav class="grid grid-flow-col py-10 px-6 xl:grid-flow-col xl:px-36 justify-between items-center">
     <img src="images/logo-bookmark.svg" alt="logo">
-    <button id="hamburgerButton" type="button" aria-label="Navigasi-Button" class="hidden">☰</button>
-    <div class="flex items-center xl:gap-10">
+    <button id="hamburgerButton" type="button" aria-label="Navigasi-Button" class="xl:hidden">☰</button>
+    <div class="hidden items-center xl:flex xl:px-5 xl:gap-10">
       <div>
         <a href="#" class="text-sm text-dark-blue">FEATURE</a>
       </div>
@@ -31,7 +31,7 @@
       <div>
         <a href="#" class="text-sm text-dark-blue">CONTACT</a>
       </div>
-      <div class="red text-white rounded xl:px-7 xl:py-2">
+      <div class="red text-white rounded xl:px-7 xl:py-2 hover:bg-transparent hover:text-red-600 hover:border-red-500 border-transparent border-2">
         <a href="#" class="text-sm">LOGIN</a>
       </div>
     </div>
@@ -39,23 +39,25 @@
 
   <main>
     <!-- Hero Section -->
-    <section class="grid xl:grid-cols-2 xl:gap-10 xl:px-36 xl:py-20 justify-around items-center">
-      <div class="mx-auto flex flex-col xl:gap-y-6">
+    <section class="grid xl:grid-cols-2 xl:gap-10 xl:px-36 xl:py-20 justify-around items-center overflow-x-hidden">
+      <div class="mx-auto flex flex-col order-2 xl:order-1 xl:gap-y-6">
         <h1 class="font-bold text-dark-blue xl:text-4xl xl:w-3/4 xl:leading-10">A Simple Bookmark Manager</h1>
         <h2 class="font-normal text-slate-400 xl:text-md xl:w-3/4">A clean and simple interface to organize your
           favourite websites. Open a new
           browser tab and see your sites load instantly. Try it for free.</h2>
-        <div class="flex xl:gap-5">
-          <a href="" class="soft-blue text-white rounded xl:px-5 xl:py-3">Get it on Chrome</a>
-          <a href="" class="bg-gray-50 shadow-lg text-gray-600 rounded xl:px-5 xl:py-3">Get it on Firefox</a>
+        <div class="flex order-1 xl:order-2 xl:gap-5">
+          <a href="" class="soft-blue text-white rounded xl:px-5 xl:py-3 hover:bg-transparent hover:text-sky-700 hover:border-sky-700 border-transparent border-2">Get it on Chrome</a>
+          <a href="" class="bg-gray-50 shadow-lg text-gray-600 rounded xl:px-5 xl:py-3 hover:bg-transparent hover:text-slate-700 hover:border-slate-500 border-transparent border-2">Get it on Firefox</a>
         </div>
       </div>
-      <div class="illustration">
+      <div class="illustration relative">
         <img src="images/illustration-hero.svg" alt="illustration-hero" class="z-10 max-w-screen-sm relative w-screen">
-        <img src="images/illustration.svg" alt="illustration-hero" class="z-0 absolute bottom-0">
+        <img src="images/illustration.svg" alt="illustration-hero" class="z-0 absolute -bottom-5 -right-52 w-screen">
       </div>
     </section>
 
+
+    <!-- Features -->
     <section class="grid xl:grid-auto-flow xl:gap-10 xl:px-36 xl:py-20 place-content-center">
       <div class="mx-auto grid justify-items-center xl:gap-y-6 xl:w-full">
         <h1 class="font-bold text-dark-blue xl:text-3xl xl:full xl:leading-10">Features</h1>
@@ -64,11 +66,11 @@
           Your bookmarks sync between your devices so you can access them on the go.</h2>
       </div>
       <div class="mx-auto grid justify-evenly xl:grid-cols-3 xl:px-20 xl:my-5 xl:w-3/4">
-        <button class="text-slate-500 xl:border-b xl:border-slate-400 xl:py-5">Simple Bookmarking</button>
-        <button class="text-slate-500 xl:border-b xl:border-slate-400 xl:py-5">Speedy Searching</button>
-        <button class="text-slate-500 xl:border-b xl:border-slate-400 xl:py-5">Easy Sharing</button>
+        <button class="text-slate-500 xl:border-b xl:border-slate-400 xl:py-5 hover:text-red-600">Simple Bookmarking</button>
+        <button class="text-slate-500 xl:border-b xl:border-slate-400 xl:py-5 hover:text-red-600">Speedy Searching</button>
+        <button class="text-slate-500 xl:border-b xl:border-slate-400 xl:py-5 hover:text-red-600">Easy Sharing</button>
       </div>
-      <div class="grid xl:grid-cols-2 xl:gap-10 xl:py-20 justify-around items-center">
+      <div class="grid xl:grid-cols-2 xl:gap-10 xl:py-10 justify-around items-center">
         <div class="mx-auto flex flex-col xl:gap-y-6 xl:pl-24 xl:order-2">
           <h1 class="font-bold text-dark-blue xl:text-4xl xl:11/12 xl:leading-10">Bookmark in one click</h1>
           <h2 class="font-normal text-slate-400 xl:text-md xl:w-10/12">Organize your bookmarks however you like. Our
@@ -86,6 +88,8 @@
       </div>
     </section>
 
+
+    <!-- Download -->
     <section class="grid xl:grid-auto-flow xl:gap-10 xl:px-36 xl:py-20 place-content-center">
       <div class="mx-auto grid justify-items-center xl:gap-y-6 xl:w-full">
         <h1 class="font-bold text-dark-blue xl:text-3xl xl:full xl:leading-10">Download the extension</h1>
@@ -101,7 +105,7 @@
             <img src="images/bg-dots.svg" alt="illustration-hero"
             class="z-0 absolute left-0 bottom-0 w-screen">
           </div>
-          <button class="w-full rounded soft-blue my-5 py-3 text-white hover:bg-indigo-500 hover:shadow-md duration-75">Add & Install Extension</button>
+          <button class="w-full rounded soft-blue my-5 py-3 text-white hover:bg-indigo-500 hover:shadow-md duration-75 hover:bg-transparent hover:text-sky-700 hover:border-sky-700 border-transparent border-2">Add & Install Extension</button>
         </div>
         <div class="rounded-xl shadow-xl h-min duration-200 xl:px-6 xl:mt-10 xl:py-0 hover:shadow-xl">
           <div class="p-5 relative">
@@ -111,7 +115,7 @@
             <img src="images/bg-dots.svg" alt="illustration-hero"
             class="z-0 absolute left-0 bottom-0 w-screen">
           </div>
-          <button class="w-full rounded soft-blue my-5 py-3 text-white hover:bg-indigo-500 hover:shadow-md duration-75">Add & Install Extension</button>
+          <button class="w-full rounded soft-blue my-5 py-3 text-white hover:bg-indigo-500 hover:shadow-md duration-75 hover:bg-transparent hover:text-sky-700 hover:border-sky-700 border-transparent border-2">Add & Install Extension</button>
         </div>
         <div class="rounded-xl shadow-xl h-min duration-200 xl:px-6 xl:mt-20 xl:py-0 hover:shadow-xl">
           <div class="p-5 relative">
@@ -121,51 +125,53 @@
             <img src="images/bg-dots.svg" alt="illustration-hero"
             class="z-0 absolute left-0 bottom-0 w-screen">
           </div>
-          <button class="w-full rounded soft-blue my-5 py-3 text-white hover:bg-indigo-500 hover:shadow-md duration-75">Add & Install Extension</button>
+          <button class="w-full rounded soft-blue my-5 py-3 text-white hover:bg-indigo-500 hover:shadow-md duration-75 hover:bg-transparent hover:text-sky-700 hover:border-sky-700 border-transparent border-2">Add & Install Extension</button>
         </div>
       </div>
     </section>
 
+
+    <!-- FaQ -->
     <section class="grid xl:grid-auto-flow xl:gap-10 xl:px-36 xl:py-20 place-content-center">
       <div class="mx-auto grid justify-items-center xl:gap-y-6 xl:w-full">
         <h1 class="font-bold text-dark-blue xl:text-3xl xl:full xl:leading-10">Frequently Asked Questions</h1>
-        <h2 class="font-normal text-center text-slate-400 xl:text-md xl:w-7/12">Here are some of our FAQs. If you have any other questions you’d like
+        <h2 class="font-normal text-center text-slate-400 xl:text-md xl:w-5/12">Here are some of our FAQs. If you have any other questions you’d like
           answered please feel free to email us.</h2>
       </div>
-      <div class="mx-auto grid justify-center xl:w-full">
-        <div class="text-slate-500 xl:border-y xl:border-slate-400 xl:py-5 xl:px-5">
+      <div class="mx-auto grid justify-center xl:w-1/2">
+        <div class="flex flex-col xl:border-y xl:border-slate-300 xl:py-5 xl:px-5 gap-y-4">
           <div class="flex flex-row xl:gap-x-40 justify-between items-center">
-            <h1 class="text-lg">What is Bookmark?</h1>
-            <img src="images/icon-arrow.svg" alt="icon" class="w-4 h-full">
+            <h1 class="text-lg hover:text-red-600">What is Bookmark?</h1>
+            <img src="images/icon-arrow.svg" alt="icon" class="w-4">
           </div>
-          <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+          <p class="text-slate-500 leading-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
             justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
         </div>
-        <div class="text-slate-500 xl:border-b xl:border-slate-400 xl:py-5 xl:px-5">
+        <div class="flex flex-col xl:border-b xl:border-slate-300 xl:py-5 xl:px-5 gap-y-4">
           <div class="flex flex-row xl:gap-x-40 justify-between items-center">
-            <h1 class="text-lg">How can I request a new browser?</h1>
-            <img src="images/icon-arrow.svg" alt="icon" class="w-4 h-full">
+            <h1 class="text-lg hover:text-red-600">How can I request a new browser?</h1>
+            <img src="images/icon-arrow.svg" alt="icon" class="w-4">
           </div>
-          <p class="hidden">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+          <p class="text-slate-500 leading-7">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
             Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
             ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
             Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
         </div>
-        <div class="text-slate-500 xl:border-b xl:border-slate-400 xl:py-5 xl:px-5">
+        <div class="flex flex-col xl:border-b xl:border-slate-300 xl:py-5 xl:px-5 gap-y-4">
           <div class="flex flex-row xl:gap-x-40 justify-between items-center">
-            <h1 class="text-lg">Is there a mobile app?</h1>
-            <img src="images/icon-arrow.svg" alt="icon" class="w-4 h-full">
+            <h1 class="text-lg hover:text-red-600">Is there a mobile app?</h1>
+            <img src="images/icon-arrow.svg" alt="icon" class="w-4">
           </div>
-          <p class="hidden">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+          <p class="text-slate-500 leading-7">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
             urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
             sollicitudin ex et ultricies bibendum.</p>
         </div>
-        <div class="text-slate-500 xl:border-b xl:border-slate-400 xl:py-5 xl:px-5">
+        <div class="flex flex-col xl:border-b xl:border-slate-300 xl:py-5 xl:px-5 gap-y-4">
           <div class="flex flex-row xl:gap-x-40 justify-between items-center">
-            <h1 class="text-lg">What about other Chromium browsers?</h1>
-            <img src="images/icon-arrow.svg" alt="icon" class="w-4 h-full">
+            <h1 class="text-lg hover:text-red-600">What about other Chromium browsers?</h1>
+            <img src="images/icon-arrow.svg" alt="icon" class="w-4">
           </div>
-          <p class="hidden">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+          <p class="text-slate-500 leading-7">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
             vitae neque eget nisl gravida pellentesque non ut velit.</p>
         </div>
         <div class="flex justify-center xl:mt-5">
@@ -174,30 +180,52 @@
       </div>
     </section>
 
+
+    <!-- Email -->
     <section class="soft-blue grid xl:grid-auto-flow xl:gap-5 xl:px-36 xl:py-20 place-content-center">
       <div class="mx-auto grid justify-items-center xl:gap-y-6 xl:w-full">
-        <h2 class="font-normal text-center tracking-widest uppercase text-slate-200 xl:text-sm xl:w-7/12">35,000+ already joined</h2>
-        <h1 class="font-bold text-center text-white xl:text-3xl xl:w-3/4 xl:leading-10">Stay up-to-date with what we’re doing</h1>
+        <h2 class="font-normal text-center tracking-[4px] uppercase text-slate-200 xl:text-xs xl:w-7/12">35,000+ already joined</h2>
+        <h1 class="font-normal text-center text-white xl:text-3xl xl:w-3/4 xl:leading-10">Stay up-to-date with what we’re doing</h1>
       </div>
       <div class="mx-auto grid xl:w-full">
-        <div class="flex flex-row items-center xl:gap-5 text-slate-500 xl:py-5 xl:px-16">
-          <input type="email" placeholder="Enter your email address" class="mt-1 block w-full xl:pr-10 xl:pl-5 xl:py-3 bg-white border border-slate-300 rounded text-sm shadow-sm placeholder-slate-400
+        <div class="flex flex-row xl:gap-5 text-slate-500 xl:py-5 xl:px-16">
+          <input type="email" placeholder="Enter your email address" class="w-full xl:pr-10 xl:pl-5 xl:py-3 bg-white border border-slate-300 rounded text-sm shadow-sm placeholder-slate-400
       focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
       disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
       invalid:border-pink-500 invalid:text-pink-600
       focus:invalid:border-pink-500 focus:invalid:ring-pink-500
     "/>
-    <button class="xl:w-1/2 rounded red xl:py-3  text-white hover:bg-red-800 hover:shadow-md duration-75">Contact Us</button>
+    <button class="xl:w-1/2 rounded red xl:py-3  text-white hover:bg-red-800 hover:shadow-md duration-75 hover:bg-indigo-500 hover:shadow-md duration-75 hover:bg-white hover:text-red-500 hover:border-red-500 border-transparent border-2">Contact Us</button>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="hidden">
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+
+  <!-- Footer -->
+  <footer class="dark-blue py-8 grid xl:grid-flow-col xl:px-36 justify-between items-center">
+    <div class="flex flex-row xl:gap-x-20">
+      <img src="images/logo-bookmark.svg" alt="logo" class="brightness-200">
+      <div class="flex items-center xl:gap-x-16">
+        <div>
+          <a href="#" class="text-sm text-slate-300 hover:text-red-400">FEATURE</a>
+        </div>
+        <div>
+          <a href="#" class="text-sm text-slate-300 hover:text-red-400">PRICING</a>
+        </div>
+        <div>
+          <a href="#" class="text-sm text-slate-300 hover:text-red-400">CONTACT</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center xl:gap-x-10">
+      <div>
+        <a href="#" class="hover:text-red-400"><img src="images/icon-facebook.svg" alt="logo" class="brightness-200"></a>
+      </div>
+      <div>
+        <a href="#" class="hover:text-red-400"><img src="images/icon-twitter.svg" alt="logo" class="brightness-200"></a>
+      </div>
+    </div>
   </footer>
 
   <script src="aos-master/dist/aos.js"></script>
