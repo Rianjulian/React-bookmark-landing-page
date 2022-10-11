@@ -1298,6 +1298,10 @@ video {
     width: 480px;
   }
 
+  .xl\:w-\[300px\] {
+    width: 300px;
+  }
+
   .xl\:w-10\/12 {
     width: 83.333333%;
   }
@@ -1308,6 +1312,18 @@ video {
 
   .xl\:w-1\/2 {
     width: 50%;
+  }
+
+  .xl\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .xl\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .xl\:w-11\/12 {
+    width: 91.666667%;
   }
 
   .xl\:max-w-2xl {
@@ -1484,6 +1500,10 @@ video {
 
   .xl\:pl-5 {
     padding-left: 1.25rem;
+  }
+
+  .xl\:pl-20 {
+    padding-left: 5rem;
   }
 
   .xl\:text-left {
